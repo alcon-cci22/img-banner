@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+.container-header{
+    width: 100%;
+    min-width: 1200px;
+
+}
+.logo-title{
+    display: flex;
+
+}
+.logo-title img{
+   width: 130px;
+   height: 40px;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.logo-title h4 {
+    color: white;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.icon-menu {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: white;
+    font-size: 38px;
+}
+
+.container-portada {
+    width: 100%;
+    height: 550px;
+    background-image: url(../img/banner11.jpg);
+    background-size: 200%;
+    animation: movimiento 10s infinite linear alternate;
+    position: relative;
+}
+
+
+  @keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to {
+        background-position: top right;
+    }
+  }
+
+ .capa-gradient {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.5;
+ }
+
+ .container-details{
+    width: 100%;
+    max-height: 1200px;
+    position: relative;
+    margin: auto;
+ }
+ .details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    color: white;
+
+ }
+ .details h3 {
+    font-size: 40px;
+    font-weight: 100;
+ }
+ .details p{
+    margin-top: 10px;
+    font-size: 20px;
+ }
+ .details button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: all 300ms;
+ }
+.details button:hover{
+    background: rgb(87, 128, 12);
+    color: rgb(250, 236, 41);
+}
+
+@media screen and (max-width:500px) {
+    .details p{
+        font-size: 18px;
+    }
+    
+}
